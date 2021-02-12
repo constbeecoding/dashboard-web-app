@@ -1,0 +1,22 @@
+/* ============================================ */
+/*            Searchbar Styling                 */
+/* ============================================ */
+
+input {
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    
+    &:focus {
+        background-color: #6f8665;
+        color: white;
+        border: solid;
+        
+    }
+
+    &:focus::placeholder {
+        color: white;
+    }
+}
