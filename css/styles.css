@@ -2,8 +2,41 @@
 /*             Variables                        */
 /* ============================================ */
 /* ============================================ */
-/*             Mixins                           */
+/*             Media Queries                    */
 /* ============================================ */
+@media (maxwidth: 320px) {
+  .grid {
+    display: grid;
+    margin: 30px auto;
+    max-width: 1000px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 10px;
+    grid-template-areas: "head" "side " "main" "main" "main" "main" "main";
+  }
+}
+@media (maxwidth: 768px) {
+  .grid {
+    display: grid;
+    margin: 30px auto;
+    max-width: 1000px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(7, 1fr);
+    gap: 25px;
+    grid-template-areas: "head head" "side side" "main main" "main main" "main main" "main" "main" "main" "main";
+  }
+}
+@media (maxwidth: 1024px) {
+  .grid {
+    display: grid;
+    margin: 30px auto;
+    max-width: 1000px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(7, 1fr);
+    gap: 25px;
+    grid-template-areas: "head" "side side" "main" "main" "main" "main" "main" "main" "main";
+  }
+}
 /* ============================================ */
 /*             Utilities Imports                */
 /* ============================================ */
@@ -377,27 +410,55 @@ template {
 /* ============================================ */
 /*             Grid Styles                      */
 /* ============================================ */
+header {
+  grid-area: head;
+}
+
+nav {
+  grid-area: side;
+}
+
+main {
+  grid-area: main;
+}
+
 .grid {
   display: grid;
   margin: 30px auto;
   max-width: 1000px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(7, 1fr);
   gap: 25px;
+  grid-template-areas: "head" "side" "main" "main" "main" "main" "main" "main";
 }
 
-.grid div {
-  border: 2px #8b58a0 solid;
+header {
+  grid-area: head;
 }
 
-.header-wrapper {
-  display: flex;
-  justify-content: center;
+nav {
+  grid-area: side;
+}
+
+main {
+  grid-area: main;
+}
+
+.main-header {
+  justify-content: space-between;
   background-color: #8b58a0;
 }
 
-.header-wrapper h1 {
+.main-header h1 {
   align-self: flex-start;
+}
+
+.main-header {
+  align-self: flex-end;
+}
+
+.flex {
+  display: flex;
 }
 
 /* ============================================ */

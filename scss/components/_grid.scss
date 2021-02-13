@@ -3,29 +3,62 @@
 /* ============================================ */
 $base-color: rgb(139, 88, 160);
 
+
+header {
+    grid-area: head;
+}
+nav {
+    grid-area: side;
+}
+main {
+    grid-area: main;
+}
+
 .grid {
     display: grid;
     margin: 30px auto;
     max-width: 1000px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(7, 1fr);
     gap: 25px;
+    grid-template-areas:
+    "head"
+    "side"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"; 
 }
 
-.grid div {
-    border: 2px $base-color solid;
-}
 //make grid areas - ensure items flex across multiple columns if need be.
-.header-wrapper {
-    display: flex;
-    justify-content: center;
+header {
+    grid-area: head;
+}
+nav {
+    grid-area: side;
+}
+main {
+    grid-area: main;
+}
+
+.main-header {
+    justify-content: space-between;
     background-color: $base-color;
 }
 
-.header-wrapper h1 {
+.main-header h1 {
     align-self: flex-start;
 }
 
+.main-header {
+    align-self: flex-end;
+}
+
+.flex {
+    display: flex;
+}
 
 // .sides {
 //     margin-left: 30px;
