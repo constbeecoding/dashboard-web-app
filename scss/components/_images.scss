@@ -1,13 +1,24 @@
 /* ============================================ */
 /*            Image Styles                      */
 /* ============================================ */
-
 img {
     display: flex;
     height: 50px;
     width: 50px;
 }
 
+.members-contain img {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.flower {
+    display: flex;
+    height: auto;
+    width: 320px;
+}
 .nav-svg {
     margin: .8em;
 }
