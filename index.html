@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
 
-    <title>Bee's Dope WebApp</title>
+    <title>Luna Technologies</title>
 
 </head>
 
@@ -17,7 +17,7 @@
 
 <div class="grid">
     <header class="main-header flex">
-        <h1>Bee Web App</h1>
+        <h1>Luna Tech</h1>
         <!-- Notification Bell SVG -->
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -29,7 +29,7 @@
         </div>
 
         <!--this is the user icon  -->
-        <!-- <img src="images/member-1.jpg"> -->
+        <img src="images/bee.jpeg">
         <h2>Luna Bee</h2>
 
     </header>
@@ -222,8 +222,43 @@
                 </section> 
 
 
-                <div class="message">Message User</div>
-                <div class="settings">Settings</div>
+                <section class="message">
+                    
+                    <h3>Message User</h3>
+                    
+                    <form class="widget-container">
+                        <input type="text" placeholder="Find User..." class="form-field" id="userField">
+                        <textarea placeholder="Message for User" class="form-area" id="messageField">  
+                        </textarea>
+                        <button class="button-primary" id="send">
+                            Send
+                        </button>
+
+                    </form>
+    
+                </section> 
+
+
+                <section class="settings">
+                    <h3>Settings</h3>
+
+                    <!--Send Email Notifications ON/OFF CSS TOGGLE-->
+                    <!--Set Profile to Public ON/OFF CSS TOGGLE-->
+
+                    <select class="form-field" id="timezone">
+                        <option disabled selected>Select a Timezone</option>
+                        <option>Atlantic Standard Time (AST)</option>
+                        <option>Eastern Standard Time (EST)</option>
+                        <option>Central Standard Time (CST)</option>
+                        <option>Mountain Standard Time (MST)</option>
+                        <option>Pacific Standard Time (PST)</option>
+                        <option>Alaskan Standard Time (AKST)</option>
+                        <option>Hawaii-Aleutian Standard Time (HST)</option>
+                        <option>Samoa Standard Time (UTC-11)</option>
+                        <option>Chamorro Standard Time (UTC+10)</option>
+                    </select>
+
+                </section>
         
         </main>
 </div>
