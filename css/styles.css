@@ -15,9 +15,13 @@ body {
   margin: 0;
 }
 
-h1 {
-  font-size: 20px;
+.main-header {
+  font-size: 18px;
   color: #fff;
+}
+
+.headline h2 {
+  color: black;
 }
 
 li {
@@ -388,6 +392,7 @@ nav {
 
 main {
   grid-area: main;
+  margin: auto;
 }
 
 .flex {
@@ -403,13 +408,28 @@ main {
 
 .main-header {
   justify-content: space-between;
+  align-items: center;
   height: 7em;
-  background-color: #8b58a0;
+  background-color: #5C526B;
+}
+
+.main-header h1 h2 {
+  margin: 10px;
+}
+
+.bell-svg {
+  margin-top: 5px;
 }
 
 .side-nav {
   justify-content: center;
   width: auto;
+  background-color: #443C4E;
+}
+
+.social-stats {
+  margin: auto;
+  flex-direction: column;
 }
 
 /* ============================================ */
@@ -418,7 +438,7 @@ main {
 @media (min-width: 768px) {
   .grid {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 70px 1fr;
     grid-template-rows: auto;
     grid-template-areas: "header header" "nav main";
   }
@@ -426,17 +446,53 @@ main {
   .side-nav {
     display: block;
   }
+
+  .side-nav img {
+    margin: 10px;
+  }
+}
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .alert, .traffic, .social-stats {
+    grid-column: 1/span 2;
+  }
+
+  .social-stats {
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .daily-traffic {
+    grid-column: 1/span 1;
+  }
+
+  .mobile-users {
+    grid-column: 2/span 1;
+  }
+
+  .flower {
+    margin: auto;
+  }
 }
 @media (min-width: 1024px) {
   .grid {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 70px 1fr;
     grid-template-rows: auto;
     grid-template-areas: "header header " "nav main";
   }
 
   .side-nav {
     display: block;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 /* ============================================ */
@@ -448,10 +504,23 @@ img {
   width: 50px;
 }
 
-.members-contain img {
+.members-container img {
   display: flex;
   height: 50px;
   width: 50px;
+  border-radius: 50%;
+}
+
+.bell-svg {
+  height: 35px;
+  width: 35px;
+}
+
+.nav-svg {
+  margin: 0.8em;
+}
+
+.main-header img {
   border-radius: 50%;
 }
 
@@ -459,10 +528,6 @@ img {
   display: flex;
   height: auto;
   width: 320px;
-}
-
-.nav-svg {
-  margin: 0.8em;
 }
 
 /* ============================================ */

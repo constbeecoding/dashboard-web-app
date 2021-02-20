@@ -1,7 +1,7 @@
 /* ============================================ */
 /*            Body & Typography                 */
 /* ============================================ */
-
+// Research why Sass variables don't import global colors.
 * {
 	margin: 0;
 	padding: 0;
@@ -16,10 +16,17 @@ body {
 	margin: 0;
 }
 
-h1 {
-	font-size: 20px;
+.main-header {
+	font-size: 18px;
 	color: #fff ;
 }
+
+
+.headline h2 {
+	color: black;
+}
+//placehold - figure out why variables aren't compiling properly
+
 
 li {
 	list-style-type: none;

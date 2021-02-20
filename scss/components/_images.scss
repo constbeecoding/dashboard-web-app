@@ -7,19 +7,27 @@ img {
     width: 50px;
 }
 
-.members-contain img {
+.members-container img {
     display: flex;
     height: 50px;
     width: 50px;
     border-radius: 50%;
 }
 
+.bell-svg {
+    height: 35px;
+    width: 35px;
+}
+
+.nav-svg {
+    margin: .8em;  
+}
+
+.main-header img {
+    border-radius: 50%;
+}
 .flower {
     display: flex;
     height: auto;
     width: 320px;
-}
-.nav-svg {
-    margin: .8em;
-    
 }
