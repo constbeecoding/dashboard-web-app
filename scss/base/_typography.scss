@@ -16,18 +16,27 @@ body {
 	margin: 0;
 }
 
+h3 {
+	color: #fff;
+	background-color: #5C526B;
+}
+
 .main-header {
 	font-size: 18px;
 	color: #fff ;
 }
 
 
-.headline h2 {
-	color: black;
+.headline h2{
+	color: #fff;
+	background-color: #5C526B;
 }
-//placehold - figure out why variables aren't compiling properly
+//placeholder - figure out why variables aren't compiling properly
 
-
+h3 {
+	color: #fff;
+	background-color: #5C526B;
+}
 li {
 	list-style-type: none;
 }

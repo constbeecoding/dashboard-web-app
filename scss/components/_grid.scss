@@ -65,6 +65,7 @@ main {
 
 
 
+
 /* ============================================ */
 /*             Media Queries                    */
 /* ============================================ */
@@ -93,7 +94,7 @@ main {
  @media (min-width: 768px) {
     main {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 50%;
     }
     .alert, .traffic, .social-stats {
             grid-column: 1 /span 2;
@@ -116,7 +117,7 @@ main {
 
 
  //DESKTOP STYLES
- 
+
 @media (min-width: 1024px) {
     .grid {
         display: grid;
@@ -133,7 +134,7 @@ main {
 
     main {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 50% 50%;
     }
 
 }

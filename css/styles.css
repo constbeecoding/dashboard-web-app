@@ -15,13 +15,24 @@ body {
   margin: 0;
 }
 
+h3 {
+  color: #fff;
+  background-color: #5C526B;
+}
+
 .main-header {
   font-size: 18px;
   color: #fff;
 }
 
 .headline h2 {
-  color: black;
+  color: #fff;
+  background-color: #5C526B;
+}
+
+h3 {
+  color: #fff;
+  background-color: #5C526B;
 }
 
 li {
@@ -454,7 +465,7 @@ main {
 @media (min-width: 768px) {
   main {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50%;
   }
 
   .alert, .traffic, .social-stats {
@@ -492,7 +503,7 @@ main {
 
   main {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 50% 50%;
   }
 }
 /* ============================================ */
