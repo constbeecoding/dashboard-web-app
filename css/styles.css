@@ -15,6 +15,16 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-size: 10px;
+  color: #fff;
+}
+
+h2 {
+  color: #fff;
+  background-color: #5C526B;
+}
+
 h3 {
   color: #fff;
   background-color: #5C526B;
@@ -23,16 +33,6 @@ h3 {
 .main-header {
   font-size: 18px;
   color: #fff;
-}
-
-.headline h2 {
-  color: #fff;
-  background-color: #5C526B;
-}
-
-h3 {
-  color: #fff;
-  background-color: #5C526B;
 }
 
 li {
@@ -403,7 +403,6 @@ nav {
 
 main {
   grid-area: main;
-  margin: auto;
 }
 
 .flex {
@@ -420,12 +419,13 @@ main {
 .main-header {
   justify-content: space-between;
   align-items: center;
-  height: 7em;
+  height: 4em;
   background-color: #5C526B;
 }
 
-.main-header h1 h2 {
-  margin: 10px;
+.header-right {
+  display: block;
+  align-self: stretch;
 }
 
 .bell-svg {
@@ -474,7 +474,11 @@ main {
 
   .social-stats {
     margin: auto;
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  .social {
+    display: block;
   }
 
   .daily-traffic {

@@ -18,7 +18,6 @@ nav {
 }
 main {
     grid-area: main;
-    margin: auto;
 }
 
 .flex {
@@ -39,12 +38,14 @@ main {
 .main-header {
     justify-content: space-between;
     align-items: center;
-    height: 7em;
+    height: 4em;
     background-color: $base-color;
 }
 
-.main-header h1 h2 {
-    margin: 10px;
+.header-right {
+    display: block;
+    align-self: stretch;
+
 }
 
 .bell-svg {
@@ -97,12 +98,17 @@ main {
         grid-template-columns: 50%;
     }
     .alert, .traffic, .social-stats {
-            grid-column: 1 /span 2;
+        grid-column: 1 /span 2;
         }
     .social-stats {
-            margin: auto;
-            flex-direction: column;
+        margin: auto;
+        flex-direction: row;
         }
+
+    .social {
+        display: block;
+    }
+
     .daily-traffic {
         grid-column: 1 /span 1;
     }

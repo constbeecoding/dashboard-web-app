@@ -16,6 +16,16 @@ body {
 	margin: 0;
 }
 
+h1 {
+	font-size: 10px;
+	color:#fff;
+}
+
+h2{
+	color: #fff;
+	background-color: #5C526B;
+}
+
 h3 {
 	color: #fff;
 	background-color: #5C526B;
@@ -26,17 +36,8 @@ h3 {
 	color: #fff ;
 }
 
-
-.headline h2{
-	color: #fff;
-	background-color: #5C526B;
-}
 //placeholder - figure out why variables aren't compiling properly
 
-h3 {
-	color: #fff;
-	background-color: #5C526B;
-}
 li {
 	list-style-type: none;
 }
