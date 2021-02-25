@@ -1,4 +1,7 @@
 /* ============================================ */
+/*             Sub-Folder Imports               */
+/* ============================================ */
+/* ============================================ */
 /*             Base Imports                     */
 /* ============================================ */
 /* ============================================ */
@@ -433,13 +436,12 @@ main {
 .main-header {
   justify-content: space-between;
   align-items: center;
-  height: 4em;
+  height: 50px;
   background-color: #5C526B;
 }
 
 .header-right {
   display: block;
-  align-self: stretch;
 }
 
 .bell-svg {
@@ -478,7 +480,7 @@ main {
 }
 @media (min-width: 768px) {
   main {
-    display: grid;
+    margin: auto;
     grid-template-columns: 50%;
   }
 
@@ -495,7 +497,7 @@ main {
     display: block;
   }
 
-  .daily-traffic {
+  .daily-traffic, .members {
     grid-column: 1/span 1;
   }
 
@@ -577,9 +579,5 @@ input:focus {
 input:focus::placeholder {
   color: white;
 }
-
-/* ============================================ */
-/*             Sub-Folder Imports               */
-/* ============================================ */
 
 /*# sourceMappingURL=styles.css.map */
