@@ -2,6 +2,6 @@
 /*             Sub-Folder Imports               */
 /* ============================================ */
 
-@use 'base/base-index';
-@use 'utilities/utilities-index';
-@use 'components/components-index';
+@import 'base/base-index';
+@import 'utilities/utilities-index';
+@import 'components/components-index';

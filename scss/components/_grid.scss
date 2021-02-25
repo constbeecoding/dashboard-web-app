@@ -1,14 +1,6 @@
 /* ============================================ */
 /*             Grid Styles                      */
 /* ============================================ */
-$base-color: #5C526B;
-$text-color: #FFF;
-
-$side-nav: #443C4E;
-
-
-
-
 
 header {
     grid-area: header;
@@ -38,13 +30,12 @@ main {
 .main-header {
     justify-content: space-between;
     align-items: center;
-    height: 4em;
+    height: 50px;
     background-color: $base-color;
 }
 
 .header-right {
     display: block;
-    align-self: stretch;
 
 }
 
@@ -94,12 +85,13 @@ main {
 // THE MAIN CONTENT AREA GRID
  @media (min-width: 768px) {
     main {
-        display: grid;
+        margin: auto;
         grid-template-columns: 50%;
     }
     .alert, .traffic, .social-stats {
         grid-column: 1 /span 2;
         }
+
     .social-stats {
         margin: auto;
         flex-direction: row;
@@ -109,7 +101,7 @@ main {
         display: block;
     }
 
-    .daily-traffic {
+    .daily-traffic, .members {
         grid-column: 1 /span 1;
     }
     .mobile-users {
