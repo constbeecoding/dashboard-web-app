@@ -30,18 +30,14 @@ main {
 .main-header {
     justify-content: space-between;
     align-items: center;
-    height: 50px;
     background-color: $base-color;
 }
 
 .header-right {
-    display: block;
-
+    flex-direction: row;
+    align-content: center;
 }
 
-.bell-svg {
-    margin-top: 5px;
-}
 
 .side-nav {
     justify-content: center;
@@ -85,21 +81,11 @@ main {
 // THE MAIN CONTENT AREA GRID
  @media (min-width: 768px) {
     main {
-        margin: auto;
         grid-template-columns: 50%;
     }
     .alert, .traffic, .social-stats {
         grid-column: 1 /span 2;
         }
-
-    .social-stats {
-        margin: auto;
-        flex-direction: row;
-        }
-
-    .social {
-        display: block;
-    }
 
     .daily-traffic, .members {
         grid-column: 1 /span 1;
@@ -107,7 +93,14 @@ main {
     .mobile-users {
         grid-column: 2 /span 1;
     }
-
+    //Styles for Media Query
+    .social-stats {
+        margin: auto;
+        flex-direction: row;
+        }
+    .social {
+        display: block;
+    }
     .flower {
         margin: auto;
     }
