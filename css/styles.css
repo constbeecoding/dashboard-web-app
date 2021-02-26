@@ -4,58 +4,6 @@
 /* ============================================ */
 /*             Base Imports                     */
 /* ============================================ */
-/* ============================================ */
-/*            Body & Typography                 */
-/* ============================================ */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-size: 12px;
-  font-family: "Varela Round", sans-serif;
-  font-weight: bold;
-  padding: 0;
-  margin: 0;
-}
-
-h1 {
-  font-size: 20px;
-  color: #fff;
-  padding: 10px;
-}
-
-h2 {
-  color: #fff;
-  background-color: #5C526B;
-  padding: 10px;
-}
-
-.headline h2 {
-  color: #000;
-  font-size: 20px;
-  background-color: #fff;
-  border-right: 1px solid;
-  margin: auto;
-  align-self: center;
-}
-
-h3 {
-  color: #fff;
-  background-color: #5C526B;
-}
-
-.main-header {
-  font-size: 18px;
-  color: #fff;
-}
-
-li {
-  list-style-type: none;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -396,6 +344,63 @@ template {
 }
 
 /* ============================================ */
+/*            Body & Typography                 */
+/* ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 25px;
+  color: #fff;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #fff;
+  padding: 15px;
+}
+
+.headline h2 {
+  color: #000;
+  font-size: 20px;
+  background-color: #fff;
+  border-right: 1px solid;
+  margin-right: auto;
+  align-self: center;
+}
+
+h3 {
+  color: #fff;
+  background-color: #5C526B;
+}
+
+.main-header {
+  font-size: 18px;
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  .h2 {
+    display: block;
+  }
+}
+/* ============================================ */
 /*             Utilities Imports                */
 /* ============================================ */
 /* ============================================ */
@@ -436,16 +441,12 @@ main {
 .main-header {
   justify-content: space-between;
   align-items: center;
-  height: 50px;
   background-color: #5C526B;
 }
 
 .header-right {
-  display: block;
-}
-
-.bell-svg {
-  margin-top: 5px;
+  flex-direction: row;
+  align-content: center;
 }
 
 .side-nav {
@@ -480,12 +481,19 @@ main {
 }
 @media (min-width: 768px) {
   main {
-    margin: auto;
     grid-template-columns: 50%;
   }
 
   .alert, .traffic, .social-stats {
     grid-column: 1/span 2;
+  }
+
+  .daily-traffic, .members {
+    grid-column: 1/span 1;
+  }
+
+  .mobile-users {
+    grid-column: 2/span 1;
   }
 
   .social-stats {
@@ -495,14 +503,6 @@ main {
 
   .social {
     display: block;
-  }
-
-  .daily-traffic, .members {
-    grid-column: 1/span 1;
-  }
-
-  .mobile-users {
-    grid-column: 2/span 1;
   }
 
   .flower {
@@ -578,6 +578,109 @@ input:focus {
 }
 input:focus::placeholder {
   color: white;
+}
+
+/* --------------------------
+  Base
+--------------------------- */
+body {
+  padding-top: 60px;
+  background: #fff;
+}
+
+.moon-svg {
+  margin: auto;
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+
+.leaves {
+  fill: #B7D0C5;
+}
+
+.chimney,
+.roof,
+.wabitiny {
+  fill: #324550;
+}
+
+.acorn {
+  fill: #B7D0C5;
+  stroke: #324550;
+  stroke-width: 15.5583;
+  stroke-miterlimit: 10;
+}
+
+/* --------------------------
+  Keyframes
+--------------------------- */
+@keyframes slide {
+  50% {
+    transform: translate3d(0, -5px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.15) rotate(-20deg);
+  }
+  40% {
+    transform: scale(1.15) rotate(20deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* --------------------------
+  SVG Styles
+--------------------------- */
+.logo * {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+.acorn {
+  stroke-dasharray: 2050px;
+  stroke-dashoffset: 2050px;
+  stroke-linecap: round;
+  animation: dash 4s linear forwards;
+  fill-opacity: 1;
+}
+
+.roof {
+  transform: translate3d(0, -1000px, 0);
+  animation: slide 8s forwards;
+}
+
+.leaves {
+  transform: translate3d();
+  animation: zoom 6s forwards;
+}
+
+.chimney {
+  animation: wiggle 4s 4s forwards;
 }
 
 /*# sourceMappingURL=styles.css.map */
