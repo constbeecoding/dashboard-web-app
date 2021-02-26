@@ -50,8 +50,28 @@ main {
     flex-direction: column;
 }
 
+.social, .members-container {
+    border-radius: 20px;
+    border: 2px solid black;
+
+}
+
+.members, .activity, .message {
+    flex-direction: column;
+}
 
 
+
+//CHART.JS CONTAINER
+
+.widget-container-full, .widget-container-half {
+    width: 95vw;
+}
+
+// .alert-banner {
+
+
+// }
 
 
 /* ============================================ */
@@ -103,6 +123,12 @@ main {
     }
     .flower {
         margin: auto;
+    }
+    .widget-container-full {
+        width: 90vw;
+    }
+    .widget-container-half {
+        width: 45vw;
     }
  }
 
