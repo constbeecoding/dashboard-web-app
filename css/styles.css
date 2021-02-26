@@ -460,6 +460,19 @@ main {
   flex-direction: column;
 }
 
+.social, .members-container {
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.members, .activity, .message {
+  flex-direction: column;
+}
+
+.widget-container-full, .widget-container-half {
+  width: 95vw;
+}
+
 /* ============================================ */
 /*             Media Queries                    */
 /* ============================================ */
@@ -507,6 +520,14 @@ main {
 
   .flower {
     margin: auto;
+  }
+
+  .widget-container-full {
+    width: 90vw;
+  }
+
+  .widget-container-half {
+    width: 45vw;
   }
 }
 @media (min-width: 1024px) {
@@ -569,7 +590,6 @@ input {
   max-width: 800px;
   padding: 10px;
   text-align: center;
-  display: inline-block;
 }
 input:focus {
   background-color: #a694bb;
@@ -583,11 +603,6 @@ input:focus::placeholder {
 /* --------------------------
   Base
 --------------------------- */
-body {
-  padding-top: 60px;
-  background: #fff;
-}
-
 .moon-svg {
   margin: auto;
   display: block;
