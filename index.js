@@ -1,5 +1,4 @@
-// JS Functionality
-// 
+// JavaScript Functionality
 
 //ALERT BANNER
 
@@ -17,5 +16,3 @@ alertBanner.addEventListener('click', e => {
     }
 
 });
-
-console.log(alert);
