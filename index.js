@@ -16,3 +16,6 @@ alertBanner.addEventListener('click', e => {
     }
 
 });
+
+//Line Graph
+
