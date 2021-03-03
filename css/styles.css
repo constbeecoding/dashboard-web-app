@@ -495,10 +495,11 @@ main {
 }
 @media (min-width: 768px) {
   main {
+    display: grid;
     grid-template-columns: 50%;
   }
 
-  .alert, .traffic, .social-stats {
+  .alert, .traffic, .social-stats, .headline {
     grid-column: 1/span 2;
   }
 
