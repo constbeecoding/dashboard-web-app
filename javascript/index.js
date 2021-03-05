@@ -17,7 +17,10 @@ alertBanner.addEventListener('click', e => {
 
 });
 
-//LINE GRAPH
+//////////////
+//LINE GRAPH//
+//////////////
+
 let trafficCanvas = document.getElementById("traffic-chart");
 let trafficData = {
     labels: [
@@ -36,30 +39,107 @@ let trafficData = {
     datasets: [{
         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
         2500],
-        backgroundColor: '#443C4E',
+        backgroundColor:'#7477BF',
         borderWidth: 2,
         }],
 
 };
 
+//Line Graph Style options
 let trafficOptions = {
     aspectRatio: 2.5,
-    animation: { duration: 0
+    animation: { 
+        duration: 0
     },
     scales: {
-    yAxes: [{
-    ticks: {
-    beginAtZero:true
-    }
-    }]
+        yAxes: [{
+            ticks: {
+            beginAtZero:true
+            }
+        }]
     },
     legend : {
-    display: false
+        display: false
     }
     };
 
+//Creates Line Graph
 let trafficChart = new Chart(trafficCanvas, {
     type: 'line',
     data: trafficData,
     options: trafficOptions
+    });
+
+/////////////
+//BAR GRAPH//
+/////////////
+
+const dailyCanvas = document.getElementById("daily-chart");
+const dailyData = {
+    labels: ["S", "M", "T", "W", "T", "F", "S"],
+    datasets: [{
+    label: '# of Hits',
+    data: [75, 115, 175, 125, 225, 200, 100],
+    backgroundColor: '#7477BF',
+    borderWidth: 1
+    }]
+    };
+
+//Bar Graph Style options
+const dailyOptions = {
+    scales: {
+        yAxes: [{
+            ticks: {
+            beginAtZero:true
+            }
+        }]
+    },
+    legend : {
+        display: false
+    }
+}
+
+//Creates Bar Graph
+let dailyChart = new Chart(dailyCanvas, {
+    type: 'bar',
+    data: dailyData,
+    options: dailyOptions
+    });
+
+
+//////////////////
+//DOUGHNUT CHART//
+//////////////////
+
+const mobileCanvas = document.getElementById("mobile-chart");
+const mobileData = {
+    labels: ["Desktop", "Tablet", "Phones"],
+    datasets: [{
+    label: '# of Users',
+    data: [2000, 550, 500],
+    borderWidth: 0,
+    backgroundColor: [
+    '#7477BF',
+    '#78CF82',
+    '#51B6C8'
+    ]
+    }]
+    };
+
+//Doughnut Chart Style options
+const mobileOptions = {
+        legend: {
+            position: 'right',
+            labels: {
+            boxWidth: 20,
+            fontStyle: 'bold'
+            }
+        }
+    }
+
+//Creates Doughnut Chart
+let mobileChart = new Chart(mobileCanvas, {
+    type: 'doughnut',
+    data: mobileData,
+    options: mobileOptions
     });
