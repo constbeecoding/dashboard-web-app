@@ -571,7 +571,6 @@ img {
   border-right: 1px solid black;
   padding-right: 10px;
 }
-
 .nav-svg {
   margin: 0.8em;
 }
@@ -596,7 +595,7 @@ input {
   text-align: center;
 }
 input:focus {
-  background-color: #a694bb;
+  background-color: #5C526B;
   color: white;
   border: solid;
 }
