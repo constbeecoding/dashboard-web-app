@@ -9,6 +9,8 @@ alertBanner.innerHTML = `
 <p class="alert-banner-close"> x </p>
 </div>
 `
+
+
 alertBanner.addEventListener('click', e => {
     const element = e.target;
     if(element.classList.contains("alert-banner-close")) {
@@ -39,8 +41,12 @@ let trafficData = {
     datasets: [{
         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
         2500],
-        backgroundColor:'#5C526B',
+        backgroundColor:'rgba(92, 82, 107, .5)',
         borderWidth: 2,
+        pointStyle: 'star',
+        pointRadius: '12',
+        pointBackgroundColor: '#fff',
+        pointBorderColor: 'gold',
         }],
 
 };
@@ -173,3 +179,5 @@ send.addEventListener('click', () => {
     alert(`Message successfully sent to: ${user.value}`);
     }
     });
+
+    //create click event (After checking notifications, gold stars turn silver, notifications open)
