@@ -33,13 +33,15 @@ h2{
 	font-size: 20px;
 	background-color: #fff;
 	border-right: 1px solid;
+	border-top: 1px solid;
 	margin-right: auto;
 	align-self: center;
 }
 
 h3 {
-	color: #fff;
-	background-color: #5C526B;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin: 10px;
 }
 
 .main-header {
@@ -47,11 +49,17 @@ h3 {
 	color: #fff ;
 }
 
-
 li {
 	list-style-type: none;
 }
 
+.alert-banner {
+	display: flex;
+	font-size: 12px;
+	justify-content: space-between;
+	margin: 10px;
+	border: #000 solid 1px;
+}
 @media (min-width: 768px) {
 	.h2 {
 		display: block;
