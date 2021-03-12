@@ -377,13 +377,15 @@ h2 {
   font-size: 20px;
   background-color: #fff;
   border-right: 1px solid;
+  border-top: 1px solid;
   margin-right: auto;
   align-self: center;
 }
 
 h3 {
-  color: #fff;
-  background-color: #5C526B;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 10px;
 }
 
 .main-header {
@@ -393,6 +395,14 @@ h3 {
 
 li {
   list-style-type: none;
+}
+
+.alert-banner {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  margin: 10px;
+  border: #000 solid 1px;
 }
 
 @media (min-width: 768px) {
@@ -566,11 +576,10 @@ img {
 }
 
 .moon-svg {
-  height: 35px;
-  width: 35px;
-  border-right: 1px solid black;
-  padding-right: 10px;
+  height: 50px;
+  width: 50px;
 }
+
 .nav-svg {
   margin: 0.8em;
 }
@@ -606,79 +615,44 @@ input:focus::placeholder {
 /* --------------------------
   Base
 --------------------------- */
-.moon-svg {
-  margin: auto;
-  display: block;
-  height: 50px;
-  width: 50px;
+.moon-outline {
+  fill: #fff;
 }
 
-.leaves {
-  fill: #B7D0C5;
+.sparkles {
+  fill: gold;
 }
 
-.chimney,
-.roof,
-.wabitiny {
-  fill: #324550;
-}
-
-.acorn {
-  fill: #B7D0C5;
-  stroke: #324550;
-  stroke-width: 15.5583;
-  stroke-miterlimit: 10;
+.dot {
+  fill: silver;
 }
 
 /* --------------------------
   Keyframes
 --------------------------- */
-@keyframes slide {
-  50% {
-    transform: translate3d(0, -5px, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
 @keyframes wiggle {
   0% {
-    transform: scale(1);
+    transform: scale(1.15) rotate(20deg);
+  }
+  10% {
+    transform: scale(1.15) rotate(-20deg);
   }
   20% {
+    transform: scale(1.15) rotate(20deg);
+  }
+  30% {
     transform: scale(1.15) rotate(-20deg);
   }
   40% {
     transform: scale(1.15) rotate(20deg);
   }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes dash {
-  0% {
-    stroke-opacity: 1;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes zoom {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
+  50% {
+    transform: scale(1.15) rotate(-20deg);
   }
 }
 /* --------------------------
   SVG Styles
 --------------------------- */
-.logo * {
-  transform-origin: 50% 50%;
-  transform-box: fill-box;
-}
-
 .acorn {
   stroke-dasharray: 2050px;
   stroke-dashoffset: 2050px;
@@ -699,6 +673,18 @@ input:focus::placeholder {
 
 .chimney {
   animation: wiggle 4s 4s forwards;
+}
+
+.moon-svg:hover {
+  animation: wiggle 1s 1s forwards;
+}
+
+.sparkles:hover {
+  stroke-dasharray: 1px;
+  stroke-dashoffset: 1px;
+  stroke-linecap: round;
+  animation: dash 0.5s linear forwards;
+  fill-opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
