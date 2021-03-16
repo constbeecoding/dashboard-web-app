@@ -399,10 +399,13 @@ li {
 
 .alert-banner {
   display: flex;
-  font-size: 12px;
+  font-size: 15px;
   justify-content: space-between;
   margin: 10px;
-  border: #000 solid 1px;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #5C526B;
 }
 
 @media (min-width: 768px) {
@@ -598,9 +601,9 @@ img {
 /*            Searchbar Styling                 */
 /* ============================================ */
 input {
-  margin: 20px auto;
+  margin: 20px;
   max-width: 800px;
-  padding: 10px;
+  padding: 10px 70px;
   text-align: center;
 }
 input:focus {
