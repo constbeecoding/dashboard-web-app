@@ -74,14 +74,23 @@
 
                 <section class="traffic">
 
-                    <div class="traffic-header">
-                        <h3>Traffic Graph</h3>
-                            <ul class="traffic-nav">
-                                <li class ="traffic-nav-link">Hourly</li>
-                                <li class ="traffic-nav-link">Daily</li>
-                                <li class ="traffic-nav-link active">Weekly</li>
-                                <li class ="traffic-nav-link">Monthly</li>
-                            </ul>
+                    <div class="traffic-header flex">
+                        <h3>Traffic</h3>
+                        <fieldset>
+                            <legend>View</legend>
+                            <div class="switch-toggle switch-ios">
+                              <input id="week" name="view" type="radio" checked>
+                              <label for="week" onclick="">Week</label>
+                          
+                              <input id="month" name="view" type="radio">
+                              <label for="month" onclick="">Month</label>
+                          
+                              <input id="day" name="view" type="radio">
+                              <label for="day" onclick="">Day</label>
+                          
+                              <a></a>
+                            </div>
+                          </fieldset>
                     </div>
                     <div class="widget-container-full">
                         <canvas id="traffic-chart"></canvas>
