@@ -44,14 +44,23 @@ h3 {
 	margin: 10px;
 }
 
+li {
+	list-style-type: none;
+}
+
+legend {
+	display: none;	
+}
+
+fieldset {
+	border: none;
+}
+
 .main-header {
 	font-size: 18px;
 	color: #fff ;
 }
 
-li {
-	list-style-type: none;
-}
 
 .alert-banner {
 	display: flex;
@@ -64,6 +73,7 @@ li {
 	background-color: #5C526B;
 	
 }
+
 
 @media (min-width: 768px) {
 	.h2 {
