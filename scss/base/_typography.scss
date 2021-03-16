@@ -55,11 +55,16 @@ li {
 
 .alert-banner {
 	display: flex;
-	font-size: 12px;
+	font-size: 15px;
 	justify-content: space-between;
 	margin: 10px;
-	border: #000 solid 1px;
+	padding: 15px;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #5C526B;
+	
 }
+
 @media (min-width: 768px) {
 	.h2 {
 		display: block;
