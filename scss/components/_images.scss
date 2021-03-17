@@ -1,11 +1,11 @@
 /* ============================================ */
 /*            Image Styles                      */
 /* ============================================ */
-img {
-    display: flex;
-    height: 50px;
-    width: 50px;
-}
+// img {
+//     display: flex;
+//     height: 50px;
+//     width: 50px;
+// }
 
 .members-container img {
     display: flex;
@@ -20,11 +20,16 @@ img {
 }
 
 .nav-svg {
-    margin: .8em;  
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    fill: white;
 }
 
 .main-header img {
     border-radius: 50%;
+    height: 50px;
+    width: 50px;
 
 }
 .flower {
