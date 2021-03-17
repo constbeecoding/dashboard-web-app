@@ -377,9 +377,7 @@ h2 {
   font-size: 20px;
   background-color: #fff;
   border-right: 1px solid;
-  border-top: 1px solid;
   margin-right: auto;
-  align-self: center;
 }
 
 h3 {
@@ -573,12 +571,6 @@ main {
 /* ============================================ */
 /*            Image Styles                      */
 /* ============================================ */
-img {
-  display: flex;
-  height: 50px;
-  width: 50px;
-}
-
 .members-container img {
   display: flex;
   height: 50px;
@@ -592,11 +584,16 @@ img {
 }
 
 .nav-svg {
-  margin: 0.8em;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  fill: white;
 }
 
 .main-header img {
   border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
 
 .flower {
@@ -610,9 +607,13 @@ img {
 /* ============================================ */
 input {
   margin: 20px;
-  max-width: 800px;
-  padding: 10px 70px;
+  padding: 10px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  input {
+    padding: 10px 70px;
+  }
 }
 input:focus {
   background-color: #5C526B;
