@@ -398,6 +398,11 @@ fieldset {
   border: none;
 }
 
+.thin-font {
+  font-family: "Roboto" sans-serif;
+  font-weight: 100;
+}
+
 .main-header {
   font-size: 18px;
   color: #fff;
@@ -412,6 +417,10 @@ fieldset {
   border-radius: 5px;
   color: #fff;
   background-color: #5C526B;
+}
+
+.members-container {
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
@@ -465,7 +474,7 @@ main {
 
 .header-right {
   flex-direction: row;
-  align-content: center;
+  align-items: center;
 }
 
 .side-nav {
@@ -474,19 +483,38 @@ main {
   background-color: #443C4E;
 }
 
+.traffic-header {
+  justify-content: space-between;
+}
+
 .social-stats {
   margin: auto;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-.social, .members-container {
-  border-radius: 20px;
-  border: 2px solid black;
+.members-container, .members-text, .activity {
+  flex-direction: column;
+  align-items: center;
 }
 
-.members, .activity, .message {
+.social {
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(192, 192, 192, 0.345);
+  border: solid 2px silver;
+  border-radius: 10px;
+  margin: 10px 50px;
+  padding: 10px;
+}
+
+.members, .activity {
   flex-direction: column;
   align-items: stretch;
+}
+
+.message {
+  flex-direction: column;
 }
 
 .widget-container-full, .widget-container-half {
@@ -518,15 +546,15 @@ main {
     grid-template-columns: 50%;
   }
 
-  .alert, .traffic, .social-stats, .headline {
+  .alert, .traffic, .social-stats, .headline, .members, .activity {
     grid-column: 1/span 2;
   }
 
-  .daily-traffic, .members {
+  .daily-traffic {
     grid-column: 1/span 1;
   }
 
-  .mobile-users, .activity {
+  .mobile-users {
     grid-column: 2/span 1;
   }
 
@@ -536,7 +564,12 @@ main {
   }
 
   .social {
-    display: block;
+    margin: 5px 50px;
+  }
+
+  .members, .members-text, .activity {
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .flower {
@@ -581,6 +614,7 @@ main {
 .moon-svg {
   height: 50px;
   width: 50px;
+  margin-right: 20px;
 }
 
 .nav-svg {
