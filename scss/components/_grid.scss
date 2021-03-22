@@ -35,7 +35,7 @@ main {
 
 .header-right {
     flex-direction: row;
-    align-content: center;
+    align-items: center;
 }
 
 
@@ -45,35 +45,46 @@ main {
     background-color: $side-nav;
 
 }
+
+.traffic-header {
+    justify-content: space-between; 
+ 
+ }
 .social-stats {
     margin: auto;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-.social, .members-container {
-    border-radius: 20px;
-    border: 2px solid black;
-
+.members-container, .members-text, .activity{
+    flex-direction: column;
+    align-items: center;
 }
 
-.members, .activity, .message {
+.social {
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(192, 192, 192, 0.345);
+    border: solid 2px silver;
+    border-radius: 10px;
+    margin: 10px 50px;
+    padding: 10px;
+}
+
+.members, .activity{
     flex-direction: column;
     align-items: stretch;
 }
 
-
+.message {
+    flex-direction: column;
+}
 
 //CHART.JS CONTAINER
 
 .widget-container-full, .widget-container-half {
     width: 95vw;
 }
-
-// .alert-banner {
-
-
-// }
-
 
 /* ============================================ */
 /*             Media Queries                    */
@@ -105,15 +116,15 @@ main {
         display: grid;
         grid-template-columns: 50%;
     }
-    .alert, .traffic, .social-stats, .headline {
+    .alert, .traffic, .social-stats, .headline, .members, .activity {
         grid-column: 1 /span 2;
         }
 
-    .daily-traffic, .members {
+    .daily-traffic {
         grid-column: 1 /span 1;
     }
     
-    .mobile-users, .activity {
+    .mobile-users {
         grid-column: 2 /span 1;
     }
     
@@ -121,9 +132,16 @@ main {
     .social-stats {
         margin: auto;
         flex-direction: row;
-        }
+    }
+
     .social {
-        display: block;
+        margin: 5px 50px;
+
+    }
+
+    .members, .members-text, .activity{
+        flex-direction: column;
+        justify-content: flex-start;
     }
     .flower {
         margin: auto;
