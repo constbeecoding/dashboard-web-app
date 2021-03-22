@@ -181,3 +181,5 @@ send.addEventListener('click', () => {
     });
 
     //create click event (After checking notifications, gold stars turn silver, notifications open)
+
+    
