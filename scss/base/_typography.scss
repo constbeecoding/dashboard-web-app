@@ -33,7 +33,6 @@ h2{
 	font-size: 20px;
 	background-color: #fff;
 	border-right: 1px solid;
-
 	margin-right: auto;
 
 }
@@ -56,6 +55,10 @@ fieldset {
 	border: none;
 }
 
+.thin-font {
+	font-family: 'Roboto' sans-serif;
+	font-weight: 100;
+}
 .main-header {
 	font-size: 18px;
 	color: #fff ;
@@ -74,6 +77,9 @@ fieldset {
 	
 }
 
+.members-container {
+	justify-content: space-between;
+}
 
 @media (min-width: 768px) {
 	.h2 {
