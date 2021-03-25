@@ -59,6 +59,7 @@ fieldset {
 	font-family: 'Roboto' sans-serif;
 	font-weight: 100;
 }
+
 .main-header {
 	font-size: 18px;
 	color: #fff ;
@@ -79,6 +80,24 @@ fieldset {
 
 .members-container {
 	justify-content: space-between;
+}
+
+.form-area {
+	margin: 5px 20px;
+    padding: 15px 15px 50px 10px;
+	background-color: rgba(232, 232, 232, 0.475);
+    border: solid 1px silver;
+    border-radius: 10px;
+}
+
+.button-primary {
+	margin: 5px 20px;
+    padding: 15px;
+    text-align: center;
+	color:#fff;
+    background-color: #5C526B;
+    border: solid 1px silver;
+    border-radius: 10px;
 }
 
 @media (min-width: 768px) {
