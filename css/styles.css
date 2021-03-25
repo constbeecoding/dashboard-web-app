@@ -423,6 +423,24 @@ fieldset {
   justify-content: space-between;
 }
 
+.form-area {
+  margin: 5px 20px;
+  padding: 15px 15px 50px 10px;
+  background-color: rgba(232, 232, 232, 0.475);
+  border: solid 1px silver;
+  border-radius: 10px;
+}
+
+.button-primary {
+  margin: 5px 20px;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  background-color: #5C526B;
+  border: solid 1px silver;
+  border-radius: 10px;
+}
+
 @media (min-width: 768px) {
   .h2 {
     display: block;
@@ -501,8 +519,8 @@ main {
 .social {
   align-items: center;
   justify-content: space-evenly;
-  background-color: rgba(192, 192, 192, 0.345);
-  border: solid 2px silver;
+  background-color: rgba(232, 232, 232, 0.475);
+  border: solid 1px silver;
   border-radius: 10px;
   margin: 10px 50px;
   padding: 10px;
@@ -513,7 +531,7 @@ main {
   align-items: stretch;
 }
 
-.message {
+.message-form {
   flex-direction: column;
 }
 
@@ -640,9 +658,12 @@ main {
 /*            Searchbar Styling                 */
 /* ============================================ */
 input {
-  margin: 20px;
+  margin: 5px 20px;
   padding: 10px;
-  text-align: center;
+  text-align: left;
+  background-color: rgba(232, 232, 232, 0.475);
+  border: solid 1px silver;
+  border-radius: 10px;
 }
 @media (min-width: 768px) {
   input {
