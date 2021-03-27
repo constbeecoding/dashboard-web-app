@@ -61,6 +61,10 @@ main {
     align-items: center;
 }
 
+.members-container {
+    margin: 10px;
+}
+
 .social {
     align-items: center;
     justify-content: space-evenly;
@@ -74,6 +78,7 @@ main {
 .members, .activity{
     flex-direction: column;
     align-items: stretch;
+    
 }
 
 .message-form {
@@ -116,15 +121,15 @@ main {
         display: grid;
         grid-template-columns: 50%;
     }
-    .alert, .traffic, .social-stats, .headline, .members, .activity {
+    .alert, .traffic, .social-stats, .headline {
         grid-column: 1 /span 2;
         }
 
-    .daily-traffic {
+    .daily-traffic, .members{
         grid-column: 1 /span 1;
     }
     
-    .mobile-users {
+    .mobile-users, .activity {
         grid-column: 2 /span 1;
     }
     
