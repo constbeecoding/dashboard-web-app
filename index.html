@@ -84,6 +84,7 @@
             
             <div class="headline flex">
                 <h2>Dashboard</h2>
+                <div class="dashboard-tab"></div>
             </div>
 
             <!--ALERT BANNER-->
@@ -274,30 +275,37 @@
                 </section> 
 
                 <!--SETTINGS-->
-                <section class="settings">
+                <section class="settings flex">
                     <h3>Settings</h3>
 
-                    <!--Send Email Notifications ON/OFF CSS TOGGLE-->
-                    <p>Send Email Notifications</p>
-                    <label class="switch-light switch-ios" onclick="">
-                        <input type="checkbox">
-                    
-                        <span>
-                          <span>Off</span>
-                          <span>On</span>
-                          <a></a>
-                        </span>
-                      </label>
-                    <!--Set Profile to Public ON/OFF CSS TOGGLE-->
-                    <p>Set Profile to Public</p>
-                    <label class="switch-light switch-ios" onclick="">
-                        <input type="checkbox">
-                        <span>
-                          <span>Off</span>
-                          <span>On</span>
-                          <a></a>
-                        </span>
-                      </label>
+                    <!--SEND EMAIL NOTIFICATIONS ON/OFF CSS TOGGLE-->
+                    <div class="switch-wrapper">
+
+                        <p>Send Email Notifications</p>
+                        <label class="switch-light switch-ios switches" onclick="">
+                            <input type="checkbox">
+                        
+                            <span>
+                                <span>Off</span>
+                                <span>On</span>
+                                <a></a>
+                            </span>
+                        </label>
+
+                        <!--SET PROFILE TO PUBLIC ON/OFF CSS TOGGLE-->
+                        <p>Set Profile to Public</p>
+                        <label class="switch-light switch-ios switches" onclick="">
+                            <input type="checkbox">
+
+                            <span>
+                                <span>Off</span>
+                                <span>On</span>
+                                <a></a>
+                            </span>
+                        </label>
+                </div>
+
+                    <!--TIMEZONE DROPDOWN-->
                 <div class="dropdown flex">
                     <select class="form-field" id="timezone">
                         <option disabled selected>Select a Timezone</option>
