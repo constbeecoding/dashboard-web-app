@@ -62,29 +62,7 @@
     SVG Styles
   --------------------------- */
  
-  
-  .acorn {
-    stroke-dasharray: 2050px;
-    stroke-dashoffset: 2050px;
-    stroke-linecap: round;  
-    animation: dash 4s linear forwards;
-    fill-opacity: 1;
-  }
-  
-  .roof {
-    transform: translate3d(0, -1000px, 0);
-    animation: slide 8s forwards;
-  }
-  
-  .leaves {
-    transform: translate3d();
-    animation: zoom 6s forwards; 
-  }
-  
-  .chimney {
-    animation: wiggle 4s 4s forwards;
-  
-  }
+
 
   .moon-svg:hover {
     animation: wiggle 1s 1s forwards;
