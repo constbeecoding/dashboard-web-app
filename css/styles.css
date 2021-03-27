@@ -376,8 +376,12 @@ h2 {
   color: #000;
   font-size: 20px;
   background-color: #fff;
-  border-right: 1px solid;
-  margin-right: auto;
+}
+
+.dashboard-tab {
+  background-color: rgba(232, 232, 232, 0.475);
+  border-left: silver;
+  border-bottom: silver;
 }
 
 h3 {
@@ -398,6 +402,10 @@ fieldset {
   border: none;
 }
 
+section {
+  border: solid 1px silver;
+}
+
 .thin-font {
   font-family: "Roboto" sans-serif;
   font-weight: 100;
@@ -406,6 +414,11 @@ fieldset {
 .main-header {
   font-size: 18px;
   color: #fff;
+}
+
+.dashboard-tab {
+  border-bottom: #000;
+  border-left: #000;
 }
 
 .alert-banner {
@@ -425,7 +438,7 @@ fieldset {
 
 .form-area {
   margin: 5px 20px;
-  padding: 15px 15px 50px 10px;
+  padding: 15px 15px 90px 10px;
   background-color: rgba(232, 232, 232, 0.475);
   border: solid 1px silver;
   border-radius: 10px;
@@ -441,8 +454,17 @@ fieldset {
   border-radius: 10px;
 }
 
-.setting-buttons {
+.switches {
+  width: 100px;
+}
+
+.settings, .setting-buttons {
+  flex-direction: column;
   justify-content: center;
+}
+
+.switch-wrapper, .switches {
+  align-self: center;
 }
 
 .button-save {
@@ -549,6 +571,10 @@ main {
   align-items: center;
 }
 
+.members-container {
+  margin: 10px;
+}
+
 .social {
   align-items: center;
   justify-content: space-evenly;
@@ -597,15 +623,15 @@ main {
     grid-template-columns: 50%;
   }
 
-  .alert, .traffic, .social-stats, .headline, .members, .activity {
+  .alert, .traffic, .social-stats, .headline {
     grid-column: 1/span 2;
   }
 
-  .daily-traffic {
+  .daily-traffic, .members {
     grid-column: 1/span 1;
   }
 
-  .mobile-users {
+  .mobile-users, .activity {
     grid-column: 2/span 1;
   }
 
@@ -753,28 +779,6 @@ input:focus::placeholder {
 /* --------------------------
   SVG Styles
 --------------------------- */
-.acorn {
-  stroke-dasharray: 2050px;
-  stroke-dashoffset: 2050px;
-  stroke-linecap: round;
-  animation: dash 4s linear forwards;
-  fill-opacity: 1;
-}
-
-.roof {
-  transform: translate3d(0, -1000px, 0);
-  animation: slide 8s forwards;
-}
-
-.leaves {
-  transform: translate3d();
-  animation: zoom 6s forwards;
-}
-
-.chimney {
-  animation: wiggle 4s 4s forwards;
-}
-
 .moon-svg:hover {
   animation: wiggle 1s 1s forwards;
 }
