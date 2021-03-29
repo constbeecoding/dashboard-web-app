@@ -1,78 +1,107 @@
 /* --------------------------
-  Base
+ SVG STYLES
 --------------------------- */
 
-  .moon-outline {
-    fill:#fff;
+.moon-outline {
+  fill:#fff;
+}
+
+
+@keyframes wiggle {
+  0% {
+    transform: scale(1.15) rotate(20deg);
+  } 10% {
+    transform: scale(1.15) rotate(-20deg);
+  } 20%{
+    transform: scale(1.15) rotate(20deg);
+  } 30% {
+    transform: scale(1.15) rotate(-20deg);
+  } 40% {
+    transform: scale(1.15) rotate(20deg);
+  } 50%{
+    transform: scale(1.15) rotate(-20deg);
+}
+}
+
+@keyframes twinkle {
+  0% {
+    fill:gold;
   }
-  
-  .sparkles{
-    fill: gold;
+  20% {
+    fill:silver;
   }
-  
-  .dot {
+  40% {
+    fill:white;
+  }
+  60% {
+    fill:gold;
+  }
+  80% {
     fill: silver;
   }
- 
-  
-  /* --------------------------
-    Keyframes
-  --------------------------- */
-  // @keyframes slide {
-  //   50% {
-  //     transform: translate3d(0,-5px,0)
-  //   }100%{
-  //     transform: translate3d(0,0,0)
-  //   }
-  // } 
-  
-  @keyframes wiggle {
-    0% {
-      transform: scale(1.15) rotate(20deg);;
-    } 10% {
-      transform: scale(1.15) rotate(-20deg);
-    } 20%{
-      transform: scale(1.15) rotate(20deg);
-    } 30% {
-      transform: scale(1.15) rotate(-20deg);
-    } 40% {
-      transform: scale(1.15) rotate(20deg);
-    } 50%{
-      transform: scale(1.15) rotate(-20deg);
+  90% {
+    fill:white;
+  }
+  100% {
+    fill:gold;
   }
 }
-  // @keyframes dash {
-  // 0% {
-  //   stroke-opacity: 1;
-  // } 100% {
-  //   stroke-dashoffset: 0;
-  // }
-  
-  // }
-  
-  // @keyframes zoom {
-  // 0% {
-  // transform: scale(0);
-  // }100%{
-  //   transform: scale(1);
-  // }
-  
-  // }
-  /* --------------------------
-    SVG Styles
-  --------------------------- */
- 
 
-
-  .moon-svg:hover {
-    animation: wiggle 1s 1s forwards;
-
+@keyframes reverseTwinkle {
+  0% {
+    fill:white;
   }
-
-  .sparkles:hover {
-    stroke-dasharray: 1px;
-    stroke-dashoffset: 1px;
-    stroke-linecap: round;  
-    animation: dash .5s linear forwards;
-    fill-opacity: 1;
+  20% {
+    fill:silver;
   }
+  40% {
+    fill:gold;
+  }
+  60% {
+    fill:white;
+  }
+  80% {
+    fill: silver;
+  }
+  90% {
+    fill:gold;
+  }
+  100% {
+    fill:white;
+  }
+}
+
+// @keyframes zoom {
+//   0% {
+//     transform: scale(1);
+//   } 25% {
+//     transform: scale(1.15);
+//   } 50%{
+//     transform: scale(1.25);
+//   } 75% {
+//     transform: scale(1.15);
+//   } 100% {
+//     transform: scale(1);
+//   } 
+// }
+
+.moon-svg:hover {
+  animation: wiggle 1s 1s forwards;
+
+}
+
+.sparkles {
+  animation: twinkle 10s infinite;
+}
+
+.dot1 {
+  animation: reverseTwinkle 10s infinite;
+}
+
+.dot2 {
+  animation: reverseTwinkle 10s infinite;
+}
+
+.dot3 {
+  animation: reverseTwinkle 10s infinite;
+}
