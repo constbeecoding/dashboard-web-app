@@ -739,23 +739,12 @@ input:focus::placeholder {
 }
 
 /* --------------------------
-  Base
+ SVG STYLES
 --------------------------- */
 .moon-outline {
   fill: #fff;
 }
 
-.sparkles {
-  fill: gold;
-}
-
-.dot {
-  fill: silver;
-}
-
-/* --------------------------
-  Keyframes
---------------------------- */
 @keyframes wiggle {
   0% {
     transform: scale(1.15) rotate(20deg);
@@ -776,19 +765,70 @@ input:focus::placeholder {
     transform: scale(1.15) rotate(-20deg);
   }
 }
-/* --------------------------
-  SVG Styles
---------------------------- */
+@keyframes twinkle {
+  0% {
+    fill: gold;
+  }
+  20% {
+    fill: silver;
+  }
+  40% {
+    fill: white;
+  }
+  60% {
+    fill: gold;
+  }
+  80% {
+    fill: silver;
+  }
+  90% {
+    fill: white;
+  }
+  100% {
+    fill: gold;
+  }
+}
+@keyframes reverseTwinkle {
+  0% {
+    fill: white;
+  }
+  20% {
+    fill: silver;
+  }
+  40% {
+    fill: gold;
+  }
+  60% {
+    fill: white;
+  }
+  80% {
+    fill: silver;
+  }
+  90% {
+    fill: gold;
+  }
+  100% {
+    fill: white;
+  }
+}
 .moon-svg:hover {
   animation: wiggle 1s 1s forwards;
 }
 
-.sparkles:hover {
-  stroke-dasharray: 1px;
-  stroke-dashoffset: 1px;
-  stroke-linecap: round;
-  animation: dash 0.5s linear forwards;
-  fill-opacity: 1;
+.sparkles {
+  animation: twinkle 10s infinite;
+}
+
+.dot1 {
+  animation: reverseTwinkle 10s infinite;
+}
+
+.dot2 {
+  animation: reverseTwinkle 10s infinite;
+}
+
+.dot3 {
+  animation: reverseTwinkle 10s infinite;
 }
 
 /*# sourceMappingURL=styles.css.map */
