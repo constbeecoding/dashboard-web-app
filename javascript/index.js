@@ -36,11 +36,68 @@ let trafficData = {
         "4-10", 
         "11-17", 
         "18-24", 
-        "25-31"],
+        "25-31"
+    ],
 
     datasets: [{
         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
         2500],
+        backgroundColor:'rgba(92, 82, 107, .5)',
+        borderWidth: 2,
+        pointStyle: 'star',
+        pointRadius: '12',
+        pointBackgroundColor: '#fff',
+        pointBorderColor: 'gold',
+        }],
+
+};
+
+let trafficDataMonth = {
+    labels: [
+        "Jan", 
+        "Feb", 
+        "March", 
+        "April", 
+        "May", 
+        "June", 
+        "July",
+        "Aug", 
+        "Sept", 
+        "Oct", 
+        "Nov",
+        "Dec"
+    ],
+
+    datasets: [{
+        data: [17600, 10000, 9000, 8050, 8264, 7234, 8165, 9652, 7120, 6093,
+        7124, 8234],
+        backgroundColor:'rgba(92, 82, 107, .5)',
+        borderWidth: 2,
+        pointStyle: 'star',
+        pointRadius: '12',
+        pointBackgroundColor: '#fff',
+        pointBorderColor: 'gold',
+        }],
+
+};
+
+let trafficDataDay= {
+    labels: [
+        "16", 
+        "17", 
+        "18", 
+        "19", 
+        "20", 
+        "21", 
+        "22",
+        "23", 
+        "24", 
+        "25", 
+        "26"],
+
+    datasets: [{
+        data: [1250, 750, 2000, 1000, 1750, 1500, 1850, 1200, 1500, 2250,
+        1275],
         backgroundColor:'rgba(92, 82, 107, .5)',
         borderWidth: 2,
         pointStyle: 'star',
@@ -75,6 +132,34 @@ let trafficChart = new Chart(trafficCanvas, {
     data: trafficData,
     options: trafficOptions
     });
+
+//Line Graph Click Event - CHANGE GRAPH ON CLICK
+const week = document.getElementById("week");
+const month = document.getElementById("month");
+const day = document.getElementById("day");
+
+month.addEventListener('click', () => {
+    let trafficChart = new Chart(trafficCanvas, {
+    type: 'line',
+    data: trafficData,
+    options: trafficOptions
+    });
+});
+
+month.addEventListener('click', () => {
+        let trafficChart = new Chart(trafficCanvas, {
+        type: 'line',
+        data: trafficDataMonth,
+        options: trafficOptions
+        });
+});
+day.addEventListener('click', () => {
+        let trafficChart = new Chart(trafficCanvas, {
+        type: 'line',
+        data: trafficDataDay,
+        options: trafficOptions
+        });
+});
 
 /////////////
 //BAR GRAPH//
