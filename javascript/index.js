@@ -24,6 +24,7 @@ alertBanner.addEventListener('click', e => {
 //////////////
 
 let trafficCanvas = document.getElementById("traffic-chart");
+
 let trafficData = {
     labels: [
         "16-22", 
@@ -138,28 +139,21 @@ const week = document.getElementById("week");
 const month = document.getElementById("month");
 const day = document.getElementById("day");
 
-month.addEventListener('click', () => {
-    let trafficChart = new Chart(trafficCanvas, {
-    type: 'line',
-    data: trafficData,
-    options: trafficOptions
+week.addEventListener('click', () => {
+    trafficChart.data = trafficData
+    trafficChart.update();
     });
-});
 
 month.addEventListener('click', () => {
-        let trafficChart = new Chart(trafficCanvas, {
-        type: 'line',
-        data: trafficDataMonth,
-        options: trafficOptions
-        });
-});
+    trafficChart.data = trafficDataMonth;
+        trafficChart.update();
+    });
+
+
 day.addEventListener('click', () => {
-        let trafficChart = new Chart(trafficCanvas, {
-        type: 'line',
-        data: trafficDataDay,
-        options: trafficOptions
-        });
-});
+    trafficChart.data = trafficDataDay;
+        trafficChart.update();
+    });
 
 /////////////
 //BAR GRAPH//
@@ -265,6 +259,10 @@ send.addEventListener('click', () => {
     }
     });
 
-    //create click event (After checking notifications, gold stars turn silver, notifications open)
+//LOCAL STORAGE
+
+//If save is clicked, save settings to local storage.
+
+
 
     
