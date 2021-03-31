@@ -360,6 +360,11 @@ body {
   margin: 0;
 }
 
+a:visited {
+  fill: #fff;
+  color: #5C526B;
+}
+
 h1 {
   font-size: 25px;
   color: #fff;
