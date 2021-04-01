@@ -16,12 +16,10 @@ body {
 }
 
 a {
-
-&:visited {
-	fill: #fff;
-	color: #5C526B;
-}
-	
+	&:visited {
+		fill: #fff;
+		color: #5C526B;
+	}
 }
 
 h1 {
@@ -30,11 +28,11 @@ h1 {
 	padding: 10px;
 }
 
-h2{
-	font-size: 18px;
+h2 {
+	font-size: 25px;
 	color: #fff;
 	padding: 15px;
-	//display: none; <---mobile view, hide
+	display: none;
 }
 
 .headline h2 {
@@ -44,6 +42,8 @@ h2{
 }
 
 .dashboard-tab {
+	height: fit-content;
+	width: fit-content;
 	background-color: rgba(232, 232, 232, 0.475);
 	border-left: silver;
 	border-bottom: silver;
@@ -73,8 +73,17 @@ section {
 
 
 .thin-font {
-	font-family: 'Roboto' sans-serif;
 	font-weight: 100;
+}
+
+.big-font {
+	font-weight: 100;
+	font-size: 40px;
+}
+
+.social-font {
+	font-weight: 500;
+	font-size: 20px;
 }
 
 .main-header {
@@ -85,6 +94,20 @@ section {
 .dashboard-tab {
 	border-bottom: #000;
 	border-left: #000;
+	margin: 5px;
+	padding: 10px;
+}
+
+.moon-notification {
+	display: flex;
+	font-size: 15px;
+	justify-content: space-between;
+	margin: 10px;
+	padding: 15px;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #5C526B;
+
 }
 
 .alert-banner {
@@ -121,9 +144,6 @@ section {
     border-radius: 10px;
 }
 
-.switches {
-	width: 100px;
-}
 
 .settings, .setting-buttons{
 	flex-direction: column;
@@ -135,8 +155,8 @@ section {
 }
 
 .button-save {
-	margin: 5px;
-    padding: 15px 50px;
+	margin: 5px 20px;
+    padding: 15px;
     text-align: center;
 	color:#fff;
     background-color: #5C526B;
@@ -145,8 +165,8 @@ section {
 }
 
 .button-cancel {
-	margin: 5px;
-	padding: 15px 50px;
+	margin: 5px 20px;
+	padding: 15px;
     text-align: center;
 	color:#fff;
     background-color: rgba(165, 165, 165, 0.968);
@@ -162,8 +182,9 @@ section {
 	margin: 10px;
 	padding: 10px;
 }
+
 @media (min-width: 768px) {
-	.h2 {
+	h2 {
 		display: block;
 	}
 }
