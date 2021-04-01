@@ -51,7 +51,6 @@ main {
  
  }
 .social-stats {
-    margin: auto;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -135,13 +134,16 @@ main {
     
     //Styles for Media Query
     .social-stats {
-        margin: auto;
         flex-direction: row;
+
+        h3 {
+            display: inline-block;
+        }
     }
 
     .social {
-        margin: 5px 50px;
-
+        margin: 5px 30px;
+        padding: 10px 80px;
     }
 
     .members, .members-text, .activity{
