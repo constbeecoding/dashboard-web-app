@@ -9,9 +9,9 @@ input {
     background-color: rgba(232, 232, 232, 0.475);
     border: solid 1px silver;
     border-radius: 10px;
-    @media (min-width: 768px) {
-        padding: 10px 70px;
-    }
+    // @media (min-width: 768px) {
+    //     padding: 10px 70px;
+    // }
     &:focus {
         background-color: #5C526B;
         color: white;
