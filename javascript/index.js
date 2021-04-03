@@ -282,7 +282,7 @@ send.addEventListener('click', () => {
 
 function filter() {
     
-    var input, ul, li, a, i;
+    let input, ul, li, a, i;
         input = document.getElementById("userID");
         filterValue = input.value.toUpperCase();
         ul = document.getElementById("gallery");
