@@ -648,7 +648,7 @@ main {
     grid-template-columns: 50%;
   }
 
-  .alert, .traffic, .social-stats, .headline {
+  .alert, .traffic, .social-stats, .headline, .widget-container-full {
     grid-column: 1/span 2;
   }
 
@@ -682,11 +682,11 @@ main {
   }
 
   .widget-container-full {
-    width: 90vw;
+    width: 100vw;
   }
 
   .widget-container-half {
-    width: 45vw;
+    width: 50vw;
   }
 }
 @media (min-width: 1024px) {
