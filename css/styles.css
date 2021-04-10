@@ -554,6 +554,10 @@ main {
   grid-area: main;
 }
 
+canvas {
+  max-width: 100%;
+}
+
 .flex {
   display: flex;
 }
@@ -606,7 +610,7 @@ main {
   background-color: rgba(232, 232, 232, 0.475);
   border: solid 1px silver;
   border-radius: 10px;
-  margin: 10px 50px;
+  margin: 10px 0px;
   padding: 10px;
 }
 
@@ -617,10 +621,6 @@ main {
 
 .message-form {
   flex-direction: column;
-}
-
-.widget-container-full, .widget-container-half {
-  width: 95vw;
 }
 
 /* ============================================ */
@@ -641,6 +641,10 @@ main {
   .side-nav img {
     margin: 10px;
   }
+
+  .social {
+    flex-basis: 29%;
+  }
 }
 @media (min-width: 768px) {
   main {
@@ -648,7 +652,7 @@ main {
     grid-template-columns: 50%;
   }
 
-  .alert, .traffic, .social-stats, .headline, .widget-container-full {
+  .alert, .traffic, .social-stats, .headline {
     grid-column: 1/span 2;
   }
 
@@ -662,9 +666,11 @@ main {
 
   .social-stats {
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .social-stats h3 {
     display: inline-block;
+    flex-basis: 100%;
   }
 
   .members, .members-text, .activity {
@@ -674,14 +680,6 @@ main {
 
   .flower {
     margin: auto;
-  }
-
-  .widget-container-full {
-    width: 100vw;
-  }
-
-  .widget-container-half {
-    width: 50vw;
   }
 }
 @media (min-width: 1024px) {
@@ -846,6 +844,33 @@ input:focus::placeholder {
 
 .dot3 {
   animation: reverseTwinkle 10s infinite;
+}
+
+.header-right {
+  position: relative;
+}
+
+#notifications {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #5C526B;
+  width: 300px;
+  top: 75px;
+  right: 0px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+#notifications li {
+  margin-bottom: 10px;
+}
+
+#notifications li {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
