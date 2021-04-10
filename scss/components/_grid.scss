@@ -12,6 +12,10 @@ main {
     grid-area: main;
 }
 
+canvas {
+    max-width: 100%;
+}
+
 .flex {
     display: flex;
 }
@@ -70,7 +74,7 @@ main {
     background-color: rgba(232, 232, 232, 0.475);
     border: solid 1px silver;
     border-radius: 10px;
-    margin: 10px 50px;
+    margin: 10px 0px;
     padding: 10px;
 }
 
@@ -84,11 +88,7 @@ main {
     flex-direction: column;
 }
 
-//CHART.JS CONTAINER
 
-.widget-container-full, .widget-container-half {
-    width: 95vw;
-}
 
 /* ============================================ */
 /*             Media Queries                    */
@@ -113,6 +113,10 @@ main {
         margin: 10px;
     }
 
+    .social {
+        flex-basis: 29%;
+    }
+
 }
 // THE MAIN CONTENT AREA GRID
  @media (min-width: 768px) {
@@ -120,7 +124,7 @@ main {
         display: grid;
         grid-template-columns: 50%;
     }
-    .alert, .traffic, .social-stats, .headline, .widget-container-full {
+    .alert, .traffic, .social-stats, .headline {
         grid-column: 1 /span 2;
         }
 
@@ -135,9 +139,10 @@ main {
     //Styles for Media Query
     .social-stats {
         flex-direction: row;
-
+        flex-wrap: wrap;
         h3 {
             display: inline-block;
+            flex-basis: 100%;
         }
     }
 
@@ -148,12 +153,6 @@ main {
     }
     .flower {
         margin: auto;
-    }
-    .widget-container-full {
-        width: 100vw;
-    }
-    .widget-container-half {
-        width: 50vw;
     }
  }
 
