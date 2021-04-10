@@ -6,15 +6,12 @@
 
 const notificationMoon = document.getElementById("notifications");
 notificationMoon.innerHTML = `
-<div class="drop-down" onclick="dropDown()">
+<div class="drop-down">
   
   <ul id="myDropdown" class="dropdown-content">
-    <li>Andromeda has commented on your post.</li>
-    <p class="notification-close"> x </p>
-    <li>New Data added to Traffic Chart.</li>
-    <p class="notification-close"> x </p>
-    <li>Cygnus A liked your post.</li>
-    <p class="notification-close"> x </p>
+    <li>Andromeda has commented on your post. <span class="notification-close"> x </span></li>
+    <li>New Data added to Traffic Chart. <span class="notification-close"> x </span></li>
+    <li>Cygnus A liked your post. <span class="notification-close"> x </span></li>
   </div>
 </div>
 `
@@ -26,9 +23,18 @@ notificationMoon.addEventListener('click', e => {
 
 });
 
-function dropDown() {
-    document.querySelector("moon-svg").classList.toggle("show");
-  }
+const moonSVG = document.querySelector(".moon-svg");
+moonSVG.addEventListener('click', e => {
+    notificationMoon.style.display ="flex";
+});
+// // function dropDown() {
+// //     document.querySelector("moon-svg").classList.toggle("show");
+// //   }
+// function dropDown() {
+//     document.querySelector("moon-svg").classList.toggle("show");
+//   }
+
+
 /////////////////////
 ////ALERT BANNER/////
 /////////////////////
