@@ -1,0 +1,23 @@
+.header-right {
+    position: relative;
+}
+#notifications  {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #5C526B;
+    width: 300px;
+    top: 75px;
+    right: 0px;
+    padding: 10px;
+    font-size: 14px;
+}
+#notifications li {
+    margin-bottom: 10px;
+}
+#notifications li {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
