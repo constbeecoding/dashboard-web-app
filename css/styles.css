@@ -460,6 +460,7 @@ section {
   border-radius: 5px;
   color: #fff;
   background-color: #5C526B;
+  cursor: pointer;
 }
 
 .members-container {
@@ -861,6 +862,7 @@ input:focus::placeholder {
   right: 0px;
   padding: 10px;
   font-size: 14px;
+  z-index: 3;
 }
 
 #notifications li {
