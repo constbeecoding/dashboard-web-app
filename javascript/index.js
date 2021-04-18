@@ -28,12 +28,12 @@ moonSVG.addEventListener('click', e => {
     notificationMoon.style.display ="flex";
 });
 
-const dropDownItems = document.getElementsByTagName("li")
+// const dropDownItems = document.getElementsByTagName("li")
 
-for (let i = 0; i < array.length; i++) {
-    const element = array[i];
+// for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
     
-}
+// }
 
 // // function dropDown() {
 // //     document.querySelector("moon-svg").classList.toggle("show");
