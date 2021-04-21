@@ -64,6 +64,10 @@ canvas {
     align-items: center;
 }
 
+.members-text p {
+    text-align: center;
+}
+
 .members-container {
     margin: 10px;
 }
@@ -124,15 +128,15 @@ canvas {
         display: grid;
         grid-template-columns: 50%;
     }
-    .alert, .traffic, .social-stats, .headline {
+    .alert, .traffic, .social-stats, .headline, .members, .activity, .message, .settings {
         grid-column: 1 /span 2;
         }
 
-    .daily-traffic, .members{
+    .daily-traffic {
         grid-column: 1 /span 1;
     }
     
-    .mobile-users, .activity {
+    .mobile-users {
         grid-column: 2 /span 1;
     }
     
@@ -145,7 +149,6 @@ canvas {
             flex-basis: 100%;
         }
     }
-
 
     .members, .members-text, .activity{
         flex-direction: column;
