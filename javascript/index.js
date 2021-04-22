@@ -70,6 +70,35 @@ alertBanner.addEventListener('click', e => {
 
 let trafficCanvas = document.getElementById("traffic-chart");
 
+let trafficDataHour = {
+    labels: [
+        "8am", 
+        "9am", 
+        "10am", 
+        "11am", 
+        "12pm", 
+        "1pm", 
+        "2pm",
+        "3pm", 
+        "4pm", 
+        "5pm", 
+        "6pm",
+        "7pm"
+    ],
+
+    datasets: [{
+        data: [800, 850, 1000, 975, 1237, 580, 582, 591, 587, 512,
+        569, 587],
+        backgroundColor:'rgba(92, 82, 107, .5)',
+        borderWidth: 2,
+        pointStyle: 'star',
+        pointRadius: '12',
+        pointBackgroundColor: '#fff',
+        pointBorderColor: 'gold',
+        }],
+
+};
+
 let trafficData = {
     labels: [
         "16-22", 
@@ -127,6 +156,8 @@ let trafficDataMonth = {
 
 };
 
+
+
 let trafficDataDay= {
     labels: [
         "16", 
@@ -180,10 +211,20 @@ let trafficChart = new Chart(trafficCanvas, {
     });
 
 //Line Graph Click Event - CHANGE GRAPH ON CLICK
+const hour = document.getElementById("hour");
 const week = document.getElementById("week");
 const month = document.getElementById("month");
 const day = document.getElementById("day");
 
+hour.addEventListener('click', () => {
+    trafficChart.data = trafficDataHour
+    trafficChart.update();
+    });
+
+day.addEventListener('click', () => {
+    trafficChart.data = trafficDataDay;
+        trafficChart.update();
+    });
 week.addEventListener('click', () => {
     trafficChart.data = trafficData
     trafficChart.update();
@@ -194,11 +235,6 @@ month.addEventListener('click', () => {
         trafficChart.update();
     });
 
-
-day.addEventListener('click', () => {
-    trafficChart.data = trafficDataDay;
-        trafficChart.update();
-    });
 
 /////////////
 //BAR GRAPH//
