@@ -406,6 +406,12 @@ section {
   border: solid 1px silver;
 }
 
+.switch-ios.switch-toggle {
+  background-color: #ffffff00;
+  border-radius: 30px;
+  box-shadow: none;
+}
+
 .thin-font {
   font-weight: 100;
 }
@@ -731,15 +737,15 @@ canvas {
 }
 
 .social-svg {
+  height: 50px;
+  width: 50px;
   fill: #5C526B;
-}
-
-.social-circle {
-  fill: silver;
 }
 
 .social-image {
   margin-right: 20px;
+  background-color: silver;
+  border-radius: 60px;
 }
 
 /* ============================================ */

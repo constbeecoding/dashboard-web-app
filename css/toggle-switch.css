@@ -305,10 +305,10 @@
   .switch-ios.switch-light input:checked ~ span span:last-of-type {
     opacity: 1;
     color: #fff; }
-  .switch-ios.switch-toggle {
+  /* .switch-ios.switch-toggle {
     background-color: #D8D9DB;
     border-radius: 30px;
-    box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0; }
+    box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0; } */
     .switch-ios.switch-toggle a {
       background-color: #4BD865;
       border: 0.125em solid #D8D9DB;
