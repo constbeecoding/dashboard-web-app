@@ -12,6 +12,7 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
 .moon-svg {
@@ -36,14 +37,18 @@
 }
 
 .social-svg {
-    height: 50px;
-    width: 50px;
-    fill:#5C526B;
+    height:25px; 
+    width: 25px;
+    fill:#fff;
 }
-
 
 .social-image {
     margin-right: 20px;
-    background-color: silver;
+    background-color: #5C526B;
     border-radius: 60px;
-}
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
