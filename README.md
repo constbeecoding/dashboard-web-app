@@ -4,8 +4,8 @@
 
 ## Struggles 
 - Combining Grid with Flexbox and "Grid within a Grid" behavior.
-- 
+- Div Soup. So many divs to accomplish what I wanted.
 
 ## Triumphs
 - Look at those breakpoints!
-- 
+- I'm proud of the SVG Moon. The colors eb and flow.
