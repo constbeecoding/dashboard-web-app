@@ -82,11 +82,13 @@ section {
 }
 
 .big-font {
+	color: rgb(128, 128, 128);
 	font-weight: 100;
 	font-size: 40px;
 }
 
 .social-font {
+	color: #5C526B;
 	font-weight: 500;
 	font-size: 20px;
 }
@@ -166,7 +168,7 @@ section {
 
 .button-save {
 	margin: 5px 20px;
-    padding: 15px;
+	padding: 15px;
     text-align: center;
 	color:#fff;
     background-color: #5C526B;
