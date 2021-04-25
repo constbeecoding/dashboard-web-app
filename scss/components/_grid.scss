@@ -72,6 +72,10 @@ canvas {
     margin: 10px;
 }
 
+.arrow {
+    display: none;
+}
+
 .social {
     align-items: center;
     justify-content: space-evenly;
@@ -119,6 +123,7 @@ canvas {
 
     .social {
         flex-basis: 29%;
+        margin: 10px;
     }
 
 }
@@ -150,13 +155,30 @@ canvas {
         }
     }
 
-    .members, .members-text, .activity{
+    .members, .members-text, .activity {
         flex-direction: column;
-        justify-content: flex-start;
     }
-    .flower {
-        margin: auto;
+    
+    .members-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
+
+    .arrow {
+        display: block;
+    }
+
+    .setting-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+        // .member-name, .member-email {
+
+        // }
+        
  }
 
 
