@@ -181,6 +181,10 @@ canvas {
         display: block;
     }
 
+    .switch-wrapper {
+        align-self: auto;
+    }
+
     .setting-buttons {
         flex-direction: row;
         justify-content: center;
@@ -189,13 +193,8 @@ canvas {
     .button-save, .button-cancel {
         padding: 15px 150px;
         margin: 5px;
+        flex: auto;
     }
-
-
-        // .member-name, .member-email {
-
-        // }
-        
  }
 
 
@@ -240,6 +239,7 @@ canvas {
     .button-save, .button-cancel {
         padding: 15px 100px;
         margin: 5px;
+        flex: auto;
     }
 
 }
