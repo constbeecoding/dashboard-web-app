@@ -433,13 +433,6 @@ section {
   color: #fff;
 }
 
-.dashboard-tab {
-  border-bottom: #000;
-  border-left: #000;
-  margin: 5px;
-  padding: 10px;
-}
-
 .moon-notification {
   display: flex;
   font-size: 15px;
@@ -676,6 +669,12 @@ canvas {
 
   .mobile-users {
     grid-column: 2/span 1;
+  }
+
+  .dashboard-tab {
+    border-bottom: solid 1px silver;
+    border-left: solid 1px silver;
+    flex-grow: 2;
   }
 
   .social-stats {
