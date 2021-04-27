@@ -487,10 +487,6 @@ section {
   align-self: auto;
 }
 
-.switch-wrapper, .switches {
-  align-self: center;
-}
-
 .button-save {
   margin: 5px 20px;
   padding: 15px;
@@ -706,6 +702,10 @@ canvas {
     display: block;
   }
 
+  .switch-wrapper {
+    align-self: auto;
+  }
+
   .setting-buttons {
     flex-direction: row;
     justify-content: center;
@@ -714,6 +714,7 @@ canvas {
   .button-save, .button-cancel {
     padding: 15px 150px;
     margin: 5px;
+    flex: auto;
   }
 }
 @media (min-width: 1024px) {
@@ -753,6 +754,7 @@ canvas {
   .button-save, .button-cancel {
     padding: 15px 100px;
     margin: 5px;
+    flex: auto;
   }
 }
 /* ============================================ */
