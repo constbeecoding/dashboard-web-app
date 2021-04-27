@@ -155,7 +155,7 @@ canvas {
         }
     }
 
-    .members, .members-text, .activity {
+    .members, .activity {
         flex-direction: column;
     }
     
@@ -165,6 +165,12 @@ canvas {
         align-items: center;
     }
 
+    .members-text {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-grow: 1;
+    }
+
     .arrow {
         display: block;
     }
@@ -172,6 +178,11 @@ canvas {
     .setting-buttons {
         flex-direction: row;
         justify-content: center;
+    }
+
+    .button-save, .button-cancel {
+        padding: 15px 150px;
+        margin: 5px;
     }
 
 
@@ -201,6 +212,28 @@ canvas {
     main {
         display: grid;
         grid-template-columns: 50% 50%;
+    }
+
+    .members, .message {
+        grid-column: 1 /span 1;
+    }
+    
+    .activity, .settings {
+        grid-column: 2 /span 1;
+    }
+
+    .settings, .message {
+        justify-content: space-between;
+    }
+    //Styles for Media Query
+    .setting-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .button-save, .button-cancel {
+        padding: 15px 100px;
+        margin: 5px;
     }
 
 }
