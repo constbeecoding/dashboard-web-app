@@ -146,6 +146,12 @@ canvas {
     }
     
     //Styles for Media Query
+
+    .dashboard-tab {
+		border-bottom: solid 1px silver;
+		border-left: solid 1px silver;
+        flex-grow: 2;
+	}
     .social-stats {
         flex-direction: row;
         flex-wrap: wrap;
