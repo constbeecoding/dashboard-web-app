@@ -487,6 +487,25 @@ section {
   align-self: auto;
 }
 
+.switch-wrapper {
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.switches {
+  width: 100px;
+}
+
+.email-switch, .set-profile {
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 10px;
+}
+.email-switch p, .set-profile p {
+  align-self: center;
+}
+
 .button-save {
   margin: 5px 20px;
   padding: 15px;
@@ -512,8 +531,13 @@ section {
 }
 
 #timezone {
-  margin: 10px;
-  padding: 10px;
+  margin: 50px 20px 10px 20px;
+  padding: 15px;
+  text-align: left;
+  background-color: rgba(232, 232, 232, 0.475);
+  border: solid 1px silver;
+  border-radius: 10px;
+  flex: auto;
 }
 
 @media (min-width: 768px) {
@@ -702,19 +726,22 @@ canvas {
     display: block;
   }
 
-  .switch-wrapper {
-    align-self: auto;
-  }
-
   .setting-buttons {
     flex-direction: row;
     justify-content: center;
   }
 
   .button-save, .button-cancel {
-    padding: 15px 150px;
-    margin: 5px;
+    padding: 15px 15px;
     flex: auto;
+  }
+
+  .button-save {
+    margin: 5px 5px 5px 20px;
+  }
+
+  .button-cancel {
+    margin: 5px 20px 5px 5px;
   }
 }
 @media (min-width: 1024px) {
