@@ -157,9 +157,27 @@ section {
 	align-self: auto;
 }
 
-// .switch-wrapper, .switches{
-// 	align-self: center;
-// }
+.switch-wrapper {
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 10px;
+}
+
+.switches{
+	width: 100px;
+}
+
+.email-switch, .set-profile {
+	flex-direction: row;
+	justify-content: flex-start;
+	margin: 10px;
+
+	p {
+		align-self: center;
+		
+	}
+}
+
 
 .button-save {
 	margin: 5px 20px;
@@ -186,8 +204,13 @@ section {
 }
 
 #timezone {
-	margin: 10px;
-	padding: 10px;
+	margin: 50px 20px 10px 20px;
+	padding: 15px;
+	text-align: left;
+	background-color: rgba(232, 232, 232, 0.475);
+	border: solid 1px silver;
+	border-radius: 10px;
+	flex: auto;
 }
 
 @media (min-width: 768px) {
