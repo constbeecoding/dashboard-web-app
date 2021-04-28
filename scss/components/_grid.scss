@@ -181,9 +181,9 @@ canvas {
         display: block;
     }
 
-    .switch-wrapper {
-        align-self: auto;
-    }
+    // .switch-wrapper {
+    //     align-self: auto;
+    // }
 
     .setting-buttons {
         flex-direction: row;
@@ -191,9 +191,16 @@ canvas {
     }
 
     .button-save, .button-cancel {
-        padding: 15px 150px;
-        margin: 5px;
+        padding: 15px 15px;
         flex: auto;
+    }
+
+    .button-save {
+        margin: 5px 5px 5px 20px;
+    }
+
+    .button-cancel {
+        margin: 5px 20px 5px 5px;
     }
  }
 
