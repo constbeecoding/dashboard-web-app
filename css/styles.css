@@ -497,13 +497,16 @@ section {
   width: 100px;
 }
 
-.email-switch, .set-profile {
+.email-switch,
+.set-profile {
   flex-direction: row;
   justify-content: flex-start;
   margin: 10px;
 }
-.email-switch p, .set-profile p {
+.email-switch p,
+.set-profile p {
   align-self: center;
+  flex-basis: 175px;
 }
 
 .button-save {
@@ -531,7 +534,7 @@ section {
 }
 
 #timezone {
-  margin: 50px 20px 10px 20px;
+  margin: 20px 20px 10px 20px;
   padding: 15px;
   text-align: left;
   background-color: rgba(232, 232, 232, 0.475);
