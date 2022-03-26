@@ -7,5 +7,6 @@
 - Div Soup. So many divs to accomplish what I wanted.
 
 ## Triumphs
+- Used Open Source Chart.js to build graphs[https://www.chartjs.org/]
 - Look at those breakpoints!
 - I'm proud of the SVG Moon. The colors eb and flow.
